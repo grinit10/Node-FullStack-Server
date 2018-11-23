@@ -23,7 +23,7 @@ mongoose.connect(
         user: keys.mongoUser,
         password: keys.mongoPassword
       },
-      dbName:'NodeFullStackDb',
+      dbName:keys.dbName,
       useNewUrlParser: true
     },
     function(err, client) {
