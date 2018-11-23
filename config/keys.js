@@ -1,7 +1,7 @@
-if(process.NODE_ENV === 'production') {
+if(process.env.NODE_ENV === 'production') {
     console.log('in prod');
     module.exports =require('./prod');
 } else {
-    console.log(process.NODE_ENV);
+    console.log(process.env.NODE_ENV);
     module.exports =require('./dev');
 }
