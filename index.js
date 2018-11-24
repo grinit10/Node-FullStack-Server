@@ -9,11 +9,13 @@ app.use(cookieSession({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(express.json());
 const mongoose = require('mongoose');
 
 require('./models/Users');
 require('./services/passport');
 require('./routes/authRoutes')(app);
+require('./routes/billingRoutes')(app);
 
 
 mongoose.connect(

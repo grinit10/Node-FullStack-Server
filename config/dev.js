@@ -5,5 +5,7 @@ module.exports = {
     mongoUser: 'arnab',
     mongoPassword: 'Nov@2018',
     dbName: 'NodeFullStackDb-dev',
-    cookieKey: 'kjasfsdkjbfkshfksckvbskjzbvkjsbkfdsckjslbas'
+    cookieKey: 'kjasfsdkjbfkshfksckvbskjzbvkjsbkfdsckjslbas',
+    stripePublishableKey: 'pk_test_JuIPFe61J6vqjVsJqkZLQ8cj',
+    stripeSecretKey: 'sk_test_5Iy1cJyrKeyTt0UwBPqub9bY'
 }
