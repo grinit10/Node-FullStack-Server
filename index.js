@@ -43,7 +43,7 @@ mongoose.connect(
     const path = require('path');
     app.get('*', (req, res) => {
       console.log('in misc path');
-      res.sendFile(path.resolve(__dirname, 'clint', 'build', 'index.html'))
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
     });
   }
 const PORT = process.env.PORT || 5000;
