@@ -38,9 +38,11 @@ mongoose.connect(
   );
 
   if(process.env.NODE_ENV === 'production') {
+    console.log('react in prod mode');
     app.use(express.static('client/build'));
     const path = require('path');
-    app.get('/*', (req, res) => {
+    app.get('*', (req, res) => {
+      console.log('in misc path');
       res.sendFile(path.resolve(__dirname, 'clint', 'build', 'index.html'))
     });
   }
