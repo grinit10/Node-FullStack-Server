@@ -13,10 +13,11 @@ app.use(express.json());
 const mongoose = require('mongoose');
 
 require('./models/Users');
+require('./models/Surveys');
 require('./services/passport');
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
-
+require('./routes/surveyRoutes')(app);
 
 mongoose.connect(
     keys.mongoHostUri,

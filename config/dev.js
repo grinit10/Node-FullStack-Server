@@ -7,5 +7,6 @@ module.exports = {
     dbName: 'NodeFullStackDb-dev',
     cookieKey: 'kjasfsdkjbfkshfksckvbskjzbvkjsbkfdsckjslbas',
     stripePublishableKey: 'pk_test_JuIPFe61J6vqjVsJqkZLQ8cj',
-    stripeSecretKey: 'sk_test_5Iy1cJyrKeyTt0UwBPqub9bY'
+    stripeSecretKey: 'sk_test_5Iy1cJyrKeyTt0UwBPqub9bY',
+    sendGridKey: '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'
 }
